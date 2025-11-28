@@ -1,0 +1,1 @@
+"This repository includes two MATLAB-based applications designed to accurately predict arbitrary-ratio power-splitter outputs using user-defined geometric parameters. Both applications are fully compatible with MATLAB 2024 and provide a practical interface for rapid performance estimation and design exploration."
