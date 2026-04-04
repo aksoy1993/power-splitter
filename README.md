@@ -21,30 +21,56 @@ Input Parameters and Physical Bounds
 The table below lists the six geometric parameters accepted by the application, their physical descriptions, and the feasible value ranges:
 Parameter Description Feasible Range Width (µm)Rib top width — determines single-mode propagation 0.8 – 1.5
 h₁ (µm) Slab height — affects vertical mode leakage 0.18 – 0.5
+
 h₂ (µm) Rib height — provides vertical mode confinement 0.2 – 0.5 
-L (µm)Total optical propagation length26 – 110
-W (µm)Multimode region width — governs higher-order mode excitation5 – 14
-L₁ (µm)Length of the removed rectangular section — directly controls power ratio0 – 16
+
+L (µm)Total optical propagation length 26 – 110
+
+W (µm)Multimode region width — governs higher-order mode excitation 5 – 14
+
+L₁ (µm)Length of the removed rectangular section — directly controls power ratio 0 – 16
+
 ⚠️ Warning: Entering parameter values outside the specified ranges may cause the model predictions to lose reliability. The application will display an automatic warning in such cases.
 
-Forward Prediction Module — Step-by-Step Guide
+Forward Prediction Module — 
+Step-by-Step Guide
 Purpose: You have a specific device geometry and want to find out what power splitting ratio it produces.
+
 Step 1: Open the application and navigate to the "Forward Prediction" tab.
+
 Step 2: Enter the six geometric parameters into the corresponding fields. For example, for a 50:50 distribution:
+
 Width = 1.25 µm
+
 h₁    = 0.20 µm
+
 h₂    = 0.50 µm
+
 L     = 26.4 µm
+
 W     = 7.60 µm
+
 L₁    = 0.00 µm
+
 Step 3: Click the "Predict" button.
+
 Step 4: The result screen displays the P₁ and P₂ values, representing the percentage of optical power delivered to the primary and secondary output ports, respectively (P₁ + P₂ = 100%).
+
 Inverse Design Module — Step-by-Step Guide
+
 Purpose: You know the target power ratio you need and want to find the geometric parameters that achieve it.
+
 Step 1: Navigate to the "Inverse Design" tab.
+
 Step 2: Enter the target power ratio in P1:P2 format. For example: 70:30
-Step 3: Click the "Run Optimization" button. The system uses the pre-trained DNN model jointly with a gradient-based optimization algorithm to compute the optimal geometric parameter set.
+
+Step 3: Click the "Run Optimization" button. The system uses the pre-trained DNN model jointly with a gradient-based 
+
+optimization algorithm to compute the optimal geometric 
+parameter set.
+
 Step 4: The recommended parameters are displayed on the screen. To verify the result, click "Verify with Forward Prediction" to automatically transfer the computed parameters to the forward prediction module.
+
 Step 5 (optional): Each parameter is perturbed by ±0.05 µm and the resulting variation in the output power ratio is computed; the most fabrication-robust solution is highlighted.
 
 
