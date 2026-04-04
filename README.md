@@ -63,7 +63,8 @@ In the application: Enter 70:30 in the Inverse Design tab and run the optimizati
 The field intensity at the primary output port is dominant; the secondary port carries only a small fraction of the total optical power. Further increasing L₁ concentrates power transfer toward the primary port and decisively alters the modal coupling dynamics. At this level of asymmetry, the self-imaging condition of the multimode region is substantially disrupted, and the output power ratio is predominantly governed by the interaction length L₁. This asymmetric distribution is used in optical neural networks, programmable photonic circuits, and power monitoring systems.
 
 Quick Reference — Which L₁ Value Produces Which Ratio?
-Target RatioApproximate L₁ (µm)Notes50:500Full symmetry, W-dependent60:40~3Mild asymmetry70:30~5–6Moderate asymmetry80:20~9–10Pronounced asymmetry90:10~12–16High asymmetry, tolerance analysis strongly recommended
+Target Ratio Approximate, L₁ (µm),    Notes
+50:50, 0, Full symmetry W-dependent; 60:40, ~3, Mild asymmetry; 70:30, ~5–6, Moderate asymmetry; 80:20, ~9–10, Pronounced asymmetry; 90:10, ~12–16, High asymmetry, tolerance analysis strongly recommended
 
 Important Note: These values are provided as guidance only. The exact parameter set depends on the specific values of Width, h₁, h₂, L, and W. The Inverse Design module will always provide the most accurate result.
 
