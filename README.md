@@ -19,8 +19,14 @@ Run run_app.m in MATLAB, or open PowerSplitterApp.mlapp directly
 The application interface will load automatically
 Input Parameters and Physical Bounds
 The table below lists the six geometric parameters accepted by the application, their physical descriptions, and the feasible value ranges:
-ParameterDescriptionFeasible RangeWidth (µm)Rib top width — determines single-mode propagation0.8 – 1.5h₁ (µm)Slab height — affects vertical mode leakage0.18 – 0.5h₂ (µm)Rib height — provides vertical mode confinement0.2 – 0.5L (µm)Total optical propagation length26 – 110W (µm)Multimode region width — governs higher-order mode excitation5 – 14L₁ (µm)Length of the removed rectangular section — directly controls power ratio0 – 16
+Parameter Description Feasible Range Width (µm)Rib top width — determines single-mode propagation 0.8 – 1.5
+h₁ (µm) Slab height — affects vertical mode leakage 0.18 – 0.5
+h₂ (µm) Rib height — provides vertical mode confinement 0.2 – 0.5 
+L (µm)Total optical propagation length26 – 110
+W (µm)Multimode region width — governs higher-order mode excitation5 – 14
+L₁ (µm)Length of the removed rectangular section — directly controls power ratio0 – 16
 ⚠️ Warning: Entering parameter values outside the specified ranges may cause the model predictions to lose reliability. The application will display an automatic warning in such cases.
+
 Forward Prediction Module — Step-by-Step Guide
 Purpose: You have a specific device geometry and want to find out what power splitting ratio it produces.
 Step 1: Open the application and navigate to the "Forward Prediction" tab.
